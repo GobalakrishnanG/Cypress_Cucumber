@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://uat-connect.healthera.co.uk/",
+  "testFiles": "**/*.{feature,features}",
+  "chromeWebSecurity": false
+}

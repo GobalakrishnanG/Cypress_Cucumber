@@ -1,0 +1,54 @@
+{    
+    "userDetails": {
+        "username": "gobi.govindan+301@healthera.co.uk",
+        "user_password": "Gobitest@78"
+        },
+
+    "headers": {
+            "Content-Type": "application/json", 
+            "Accept": "application/json", 
+            "client-id": "9xsEQDt9RjgYeWB"
+        },
+
+    "url": {
+        
+            "dev": "https://api.84r.co",
+            "uat": "https://uat-api.healthera.co.uk/"
+    
+        },
+    
+    "patientId": "4c08e360-9ecc-11eb-97cb-c972df7a859b",
+
+    "pharmacyId": "e1b7f540-d50e-11eb-8e29-98d62fcdba9d",
+
+    "post_Order_Endpoint": "https://uat-api.healthera.co.uk/orders",
+
+    "getTokens": "https://uat-api.healthera.co.uk/tokens",
+
+    "post_RX_Order": 
+            {
+            "body": {
+                "repeat": {
+                  "medicines": [
+                    {
+                      "medicine_id": "d60a0a10-016c-11eb-8647-97923614cc02",
+                      "medicine_name": "Paracetamol 500mg capsules",
+                      "medicine_type": "capsules",
+                      "course_quantity": 28
+                    }
+                  ]
+                },
+                "delivery": {
+                  "option": "local",
+                  "address": {
+                    "line_1": "1 Green Acres",
+                    "city": "Croydon",
+                    "postcode": "CR05UW"
+                  }
+                },
+                "patient_id": "4c08e360-9ecc-11eb-97cb-c972df7a859b",
+                "pharmacy_id": "e1b7f540-d50e-11eb-8e29-98d62fcdba9d",
+                "payment_method_id": "card_1J2CRYAAmzW17VJ2QcktbTtd"
+              }
+            }
+}

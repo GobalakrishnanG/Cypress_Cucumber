@@ -1,0 +1,23 @@
+{
+  "name": "cypress_mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --spec \"cypress/integration/login.spec.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.7.0",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "cypress-wait-until": "^1.7.1"
+  },
+  "dependencies": {
+    "npx": "^10.2.2",
+    "popper.js": "^1.14.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/"
+  }
+}
