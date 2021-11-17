@@ -8,5 +8,6 @@ workflows:
 # Name the workflow “welcome”
   build:
     jobs:
-      - cypress/run
+      - cypress/run:
+        yarn: true
         
