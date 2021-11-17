@@ -1,12 +1,12 @@
 version: 2.1
-# Use a package of configuration called an orb.
 orbs:
-# Declare a dependency on the welcome-orb
+  # "cypress-io/cypress@1" installs the latest published
+  # version "1.x.y" of the orb. We recommend you then use
+  # the strict explicit version "cypress-io/cypress@1.x.y"
+  # to lock the version and prevent unexpected CI changes
   cypress: cypress-io/cypress@1
-# Orchestrate or schedule a set of jobs
 workflows:
-# Name the workflow “welcome”
   build:
     jobs:
-      - cypress-io/run
+      - cypress/run # "run" job comes from "cypress" orb
         
