@@ -5,5 +5,4 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          executor: cypress/base-8
           start: 'npm start' # start server before running tests
